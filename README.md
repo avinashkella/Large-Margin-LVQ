@@ -13,4 +13,4 @@ Learning Vector Quantization(LVQ) is well-known for Supervised Vector Quantizati
 5) Extract distances between datapoints and prototypes with different label by using Euclidean distance.
 6) Compute the cost function:
 
-![equation](https://latex.codecogs.com/svg.latex?E&space;=&space;\overbrace{\sum_{i=1}^{m}d_{i}^+}^{pull}&space;+&space;\frac{1{2C}\cdot&space;\overbrace{\sum_{i=1}^{m} \sum_{l \in I_i} ReLU(d_{i}^+&space;-&space;d_{i,l}&space;+&space;\gamma)^2}^{push})
+Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
