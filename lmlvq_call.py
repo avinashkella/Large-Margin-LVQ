@@ -7,20 +7,20 @@ Created on Thu Sep 17 16:27:52 2020
 """
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-from LMLVQ_numpy import lmlvq
+from lmlvq_numpy import LMLVQ
 import numpy as np
 
-prototype_per_class = 5
+prototype_per_class = 1
 input_data = load_iris().data
 data_label = load_iris().target
-epochs = 30
+epochs = 1
 learning_rate = 0.01
 margin = 1
 C = 1E2
 
 
 
-clf = lmlvq(prototype_per_class)
+clf = LMLVQ(prototype_per_class)
 
 X_train, X_test, y_train, y_test = train_test_split(input_data,
                                                     data_label,
@@ -34,3 +34,8 @@ y_predict = clf.predict(X_test)
 acc = np.sum(y_predict == y_test)
 acc = acc / len(y_test) * 100
 print(acc)
+
+
+
+
+
