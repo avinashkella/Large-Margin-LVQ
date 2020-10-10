@@ -21,3 +21,9 @@ Learning Vector Quantization(LVQ) is well-known for Supervised Vector Quantizati
 <p align="center">
   <img src="http://latex.codecogs.com/svg.latex?w(t&plus;1)&space;=&space;w(t)&space;-&space;\eta&space;\frac{\partial&space;E}{\partial&space;w(t)}" title="http://latex.codecogs.com/svg.latex?w(t+1) = w(t) - \eta \frac{\partial E}{\partial w(t)}" />
 </p>
+
+## Installation
+1) Clone this repository.
+2) Make sure that `numpy`, `matplotlib`, `Scikit Learn` should be installed.
+3) Go to folder and run the **python3 lmlvq_call.py** command.
+
